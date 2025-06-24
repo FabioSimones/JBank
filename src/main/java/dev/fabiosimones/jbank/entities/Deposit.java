@@ -1,4 +1,4 @@
-package dev.fabiosimones.jbank.entity;
+package dev.fabiosimones.jbank.entities;
 
 import jakarta.persistence.*;
 

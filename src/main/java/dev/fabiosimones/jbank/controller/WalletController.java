@@ -3,6 +3,7 @@ package dev.fabiosimones.jbank.controller;
 import dev.fabiosimones.jbank.controller.dto.CreateWalletDTO;
 import dev.fabiosimones.jbank.exception.WalletDataAlreadyExistsException;
 import dev.fabiosimones.jbank.service.WalletService;
+import jakarta.validation.Valid;
 import org.springframework.http.ProblemDetail;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -19,7 +20,7 @@ public class WalletController {
     }
 
     @PostMapping
-    public ResponseEntity<Void> createWallet(@RequestBody CreateWalletDTO dto){
+    public ResponseEntity<Void> createWallet(@RequestBody @Valid CreateWalletDTO dto){
 
         var wallet = walletService.createWaller(dto);
 

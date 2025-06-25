@@ -28,6 +28,5 @@ public class GlobalExceptionHandler {
         pd.setProperty("invalid-params ", invalidParams);
 
         return pd;
-
     }
 }

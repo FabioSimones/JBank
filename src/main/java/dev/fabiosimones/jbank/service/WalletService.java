@@ -2,11 +2,13 @@ package dev.fabiosimones.jbank.service;
 
 import dev.fabiosimones.jbank.controller.dto.CreateWalletDTO;
 import dev.fabiosimones.jbank.entities.Wallet;
+import dev.fabiosimones.jbank.exception.DeleteWalletException;
 import dev.fabiosimones.jbank.exception.WalletDataAlreadyExistsException;
 import dev.fabiosimones.jbank.repository.WalletRepository;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+import java.util.UUID;
 
 @Service
 public class WalletService {
@@ -30,5 +32,19 @@ public class WalletService {
         wallet.setEmail(dto.email());
 
         return walletRepository.save(wallet);
+    }
+
+    public boolean deleteWallet(UUID walletId) {
+        var wallet = walletRepository.findById(walletId);
+
+        if(wallet.isPresent()){
+
+            if(wallet.get().getBalance().compareTo(BigDecimal.ZERO) != 0){
+                throw new DeleteWalletException("The balance is not ZERO. The current amount is $" + wallet.get().getBalance());
+            }
+            walletRepository.deleteById(walletId);
+        }
+
+        return wallet.isPresent();
     }
 }

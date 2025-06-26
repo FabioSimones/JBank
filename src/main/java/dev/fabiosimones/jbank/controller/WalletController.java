@@ -1,10 +1,10 @@
 package dev.fabiosimones.jbank.controller;
 
 import dev.fabiosimones.jbank.controller.dto.CreateWalletDTO;
-import dev.fabiosimones.jbank.exception.WalletDataAlreadyExistsException;
+import dev.fabiosimones.jbank.controller.dto.DepositMoneyDTO;
 import dev.fabiosimones.jbank.service.WalletService;
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
-import org.springframework.http.ProblemDetail;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -35,5 +35,17 @@ public class WalletController {
         return deleted ?
                 ResponseEntity.noContent().build() :
                 ResponseEntity.notFound().build();
+    }
+
+    @PostMapping(path = "/{walletId}/deposits")
+    public ResponseEntity<Void> depositMoney(@PathVariable("walletId")UUID walletId,
+                                             @RequestBody @Valid DepositMoneyDTO dto,
+                                             HttpServletRequest servletRequest){
+
+        walletService.depositMoney(walletId,
+                dto,
+                servletRequest.getAttribute("x-user-ip").toString());
+
+        return ResponseEntity.ok().build();
     }
 }

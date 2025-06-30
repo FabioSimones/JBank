@@ -16,9 +16,29 @@
   </ul>
 </ol>
 
-<ol>
-  <li>Encerrar uma Carteira: </li>
-  <ul>
-    <li>Permitir o fechamento de uma carteira bancária existente, desde que o saldo esteja zerado.</li>
-  </ul>
+  <ol>
+    <li>Encerrar uma Carteira: </li>
+    <ul>
+      <li>Permitir o fechamento de uma carteira bancária existente, desde que o saldo esteja zerado.</li>
+    </ul>
+  </ol>
+
+  <ol>
+    <li>Depositar Dinheiro: </li>
+    <ul>
+      <li>Realizar depósitos de dinheiro em uma carteira existente. Este serviço deve atualizar o saldo da carteira correspondente e registrar 
+        os dados na tabela de histórico de depósitos.
+      </li>
+    </ul>
+  </ol>
+
+    <ol>
+    <li>Realizar Transferência: </li>
+    <ul>
+      <li>Realizar depósitos de dinheiro em uma carteira existente. Este serviço deve atualizar o saldo da carteira correspondente e registrar 
+        os dados na tabela de histórico de depósitos.
+      </li>
+    </ul>
+  </ol>
 </ol>
+

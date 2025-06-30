@@ -83,3 +83,35 @@
     <li>Endereço IP do usuário que fez o depósito.</li>
   </ul>
 </ul>
+
+### Regras do Projeto:
+<ul>
+  <li>Logging e Auditoria:</li>
+  <ul>
+    <li>Filtro de IP: Implementar um filtro para capturar e logar o endereço IP de cada usuário que faz uma solicitação ao sistema. Esse IP deve ser 
+      incluído no header de resposta.</li>
+    <li>Interceptor de Auditoria: Criar um interceptor para logar todas as requisições e respostas do sistema. Este interceptor deve registrar detalhes 
+      como método HTTP, URL, código de status da resposta e endereço ip.</li>
+  </ul>
+</ul>
+
+<ul>
+  <li>Validações e Regras de Negócio:</li>
+  <ul>
+    <li>Saldo Suficiente: Antes de realizar uma transferência, o sistema deve verificar se a conta de origem possui saldo suficiente.</li>
+    <li>Encerramento de Conta: Só permitir o encerramento de contas que possuem saldo igual a zero.</li>
+    <li>Transações Simultâneas: Garantir a consistência das operações de depósito e transferência, utilizando mecanismos apropriados de controle 
+      de transações (transações ACID).</li>
+  </ul>
+</ul>
+
+<p>
+  Ao completar este projeto, você ganhará experiência prática na configuração de projetos Spring Boot, manipulação de transações bancárias, 
+  implementação de filtros e interceptores para auditoria e logging, validação de dados da requisição com e na criação de APIs RESTful para 
+  operações CRUD e gerenciamento de transações bancárias.
+</p>
+  
+<p>
+  Este projeto irá capacitá-lo com o conhecimento e habilidades necessárias para construir e gerenciar sistemas backend robustos e 
+  seguros usando Spring Boot, Spring Data JPA, Hibernate Validator e boas práticas de logging e auditoria.
+</p>

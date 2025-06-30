@@ -66,10 +66,20 @@
   <li>Transferência:</li>
   <ul>
     <li>Código da Transferência (uuid)</li>
-    <li>CPF (unique)</li>
-    <li>E-mail (unique)</li>
-    <li>Nome do Titular</li>
-    <li>Saldo Atual</li>
+    <li>Carteira de Origem (Many-to-One): Carteira de onde o dinheiro será debitado.</li>
+    <li>Carteira de Destino (Many-to-One): Carteira para onde o dinheiro será creditado.</li>
+    <li>Valor da Transferência</li>
+    <li>Data e Hora da Transferência</li>
   </ul>
 </ul>
 
+<ul>
+  <li>Depósitos:</li>
+  <ul>
+    <li>Código do deposito (uuid)</li>
+    <li>Carteira de destino do depósito (Many-to-One).</li>
+    <li>Valor depositado.</li>
+    <li>Data e hora do depósito.</li>
+    <li>Endereço IP do usuário que fez o depósito.</li>
+  </ul>
+</ul>

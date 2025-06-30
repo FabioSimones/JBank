@@ -31,5 +31,45 @@
       </li>
     </ul>
   </ul>
+
+  <ul>
+    <li>Realizar Transferências: </li>
+    <ul>
+      <li>Permitir a transferência de fundos de uma carteira para outra. Deve verificar a disponibilidade de saldo suficiente antes de completar a transação.
+      </li>
+    </ul>
+  </ul>
+
+  <ul>
+    <li>Consultar Extrato: </li>
+    <ul>
+      <li>Gerar e fornecer um extrato detalhado das transações realizadas em uma carteira, incluindo depósitos, transferências recebidas e enviadas, com data e hora.
+      </li>
+    </ul>
+  </ul>
+</ul>
+
+### Entidades e Relacionamentos:
+
+<ul>
+  <li>Carteira:</li>
+  <ul>
+    <li>Código da Conta(uuid)</li>
+    <li>CPF (unique)</li>
+    <li>E-mail (unique)</li>
+    <li>Nome do Titular</li>
+    <li>Saldo Atual</li>
+  </ul>
+</ul>
+
+<ul>
+  <li>Transferência:</li>
+  <ul>
+    <li>Código da Transferência (uuid)</li>
+    <li>CPF (unique)</li>
+    <li>E-mail (unique)</li>
+    <li>Nome do Titular</li>
+    <li>Saldo Atual</li>
+  </ul>
 </ul>
 

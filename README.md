@@ -9,36 +9,27 @@
 
 ### Funcionalidades do sistema:
 
-<ol>
+<ul>
   <li>Criar uma Carteira: </li>
   <ul>
     <li>Permitir a criação de uma carteira bancária com informações como CPF, email e nome do titular.</li>
   </ul>
-</ol>
+</ul>
 
-  <ol>
+  <ul>
     <li>Encerrar uma Carteira: </li>
     <ul>
       <li>Permitir o fechamento de uma carteira bancária existente, desde que o saldo esteja zerado.</li>
     </ul>
-  </ol>
+  </ul>
 
-  <ol>
+  <ul>
     <li>Depositar Dinheiro: </li>
     <ul>
       <li>Realizar depósitos de dinheiro em uma carteira existente. Este serviço deve atualizar o saldo da carteira correspondente e registrar 
         os dados na tabela de histórico de depósitos.
       </li>
     </ul>
-  </ol>
-
-    <ol>
-    <li>Realizar Transferência: </li>
-    <ul>
-      <li>Realizar depósitos de dinheiro em uma carteira existente. Este serviço deve atualizar o saldo da carteira correspondente e registrar 
-        os dados na tabela de histórico de depósitos.
-      </li>
-    </ul>
-  </ol>
-</ol>
+  </ul>
+</ul>
 

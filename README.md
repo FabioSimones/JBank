@@ -106,12 +106,12 @@
 </ul>
 
 <p>
-  Ao completar este projeto, você ganhará experiência prática na configuração de projetos Spring Boot, manipulação de transações bancárias, 
+  Ao termino deste projeto pude adquirir: experiência prática na configuração de projetos Spring Boot, manipulação de transações bancárias, 
   implementação de filtros e interceptores para auditoria e logging, validação de dados da requisição com e na criação de APIs RESTful para 
   operações CRUD e gerenciamento de transações bancárias.
 </p>
   
 <p>
-  Este projeto irá capacitá-lo com o conhecimento e habilidades necessárias para construir e gerenciar sistemas backend robustos e 
+  Este projeto me capacitou com o conhecimento e habilidades necessárias para construir e gerenciar sistemas backend robustos e 
   seguros usando Spring Boot, Spring Data JPA, Hibernate Validator e boas práticas de logging e auditoria.
 </p>
